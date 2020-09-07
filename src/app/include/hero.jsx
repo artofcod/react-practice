@@ -9,7 +9,7 @@ class Banner extends React.Component{
             <h1>Welcome to Siimple</h1>
             <h2>Please, fill out the for below to be notified for the latest updates!</h2>
       
-            <form onsubmit="return false" method="post" role="form" className="php-email-form">
+            <form onSubmit={(e)=>e.preventDefault()} method="post" className="php-email-form">
               <div className="row no-gutters">
                 <div className="col-md-6 form-group pr-md-1">
                   <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -31,5 +31,10 @@ class Banner extends React.Component{
           </div>
         </section>
         )
+    }
+
+    notify(e){
+      alert("You will bo notified soon");
+      e.preventDefault();
     }
 }

@@ -4,7 +4,7 @@ import React from 'react';
 // import { a } from 'react-router-dom'
 
 import Header from './include/header';
-import Hero from './include/banner';
+import Hero from './include/hero';
 import Aboutus from './include/aboutus';
 import Whyus from './include/whyus';
 import Faq from './include/faq';

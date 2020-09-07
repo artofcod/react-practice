@@ -41,7 +41,7 @@ class Contactus extends React.Component{
                 </div>
       
                 <div className="col-lg-5 col-md-7">
-                  <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                  <form onSubmit={(e)=>e.preventDefault()} method="post" className="php-email-form">
                     <div className="form-group">
                       <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                       <div className="validate"></div>
